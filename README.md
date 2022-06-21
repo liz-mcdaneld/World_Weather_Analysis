@@ -5,13 +5,13 @@ While working on the PlanMyTrip app, beta testers have requested additional feat
 ## Task List
 Below is a list of the task used to preform the objective of the project.
 
-1.	Using Python and Pandas coding to preform task.
-2.	Enable and import gmaps to generate map figures.
+1.	Using Python and Pandas to preform analysis task.
+2.	Enable and import gmaps to embed Google Maps in Jupyter Notebooks.
 3.	Import requests, numpy, and citipy dependencies.
 4.	Generate random latitudes and longitudes using numpy.random( ) function.
-5.	Configure and retrieve data from OpenWeatherMap API.
+5.	Configure API keys and retrieve data from OpenWeatherMap API.
 6.	Retrieve and store values from a JSON array.
-7.	Resolve errors using try and except blocks of coding.
+7.	Resolve potential errors using try and except blocks of coding.
 8.	Create and add info box and markers using the Google Maps API to show weather data and description.
 9.	Store weather data into a newly created weather DataFrame and CSV files.
 10.	Create input box for users to input ideal minimum and maximum temperature parameters for destination search.
@@ -23,7 +23,7 @@ Below is a list of the task used to preform the objective of the project.
 
 ## Course of Action
 ### Retrieve the Weather Data
-An API was established with OpenWeatherMap to retrieve latitude and longitude, maximum temperature, humidity, cloudiness, wind speed, and weather descriptions. This information was then added and stored into a new DataFrame then exported to a CSV file. 
+An API key was established with OpenWeatherMap to retrieve latitude and longitude, maximum temperature, humidity, cloudiness, wind speed, and weather descriptions. This information was then added and stored into a new DataFrame then exported to a CSV file. 
 
 ### Create a Customer Travel Destinations Map
 Input statements are added to ask beta testers for their minimum and maximum temperature preferences. This information is used to create a new DataFrame, which is cleaned from null entries and empty rows before exporting into a CSV file. Info boxes are added with pop-up markers to show hotel name, city, country, and a current weather description with the maximum temperature.
@@ -31,7 +31,7 @@ Input statements are added to ask beta testers for their minimum and maximum tem
 
 
 ### Create an Itinerary Map
-Based on each city on the itinerary four DataFrames are created, and pairs of latitude and longitude are retrieved for each city.  A travel map is created with a directions layer map to show travel routes between the four cities. 
+Based on each of the four cities on the itinerary, four DataFrames are created. Pairs of latitude and longitude are retrieved for each of the four cities and stored in this DataFrame.  A travel map is created with a directions layer map to show travel routes between the four cities. 
 ![WeatherPy_travel_map](https://user-images.githubusercontent.com/103263248/174843360-7629b628-8e69-4ad5-a697-045790898835.png)
 
 
